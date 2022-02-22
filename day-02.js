@@ -38,11 +38,11 @@ const answer3 = () => "yes";
 
 // Training JS #4: Basic data types--Array
 
-const getLength = arr => arr.length;
-const getFirst = arr => arr[0];
-const getLast = arr => arr[arr.length - 1];
+const getLength = (arr) => arr.length;
+const getFirst = (arr) => arr[0];
+const getLast = (arr) => arr[arr.length - 1];
 
-const pushElement = arr => {
+const pushElement = (arr) => {
   arr.push(1);
   return arr;
 }
@@ -58,4 +58,4 @@ const popElement = (arr) => {
 
 // Training JS #5: Basic data types--Object
 
-const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+const animal = (obj) => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;

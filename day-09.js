@@ -33,8 +33,5 @@ function firstToLast(str, c) {
 // Training JS #18: Methods of String object--concat() split() and its good friend join()
 
 function splitAndMerge(string, separator) {
-  const words = string.split(' ')
-  const letters = words.map(word => word.split('').join(separator));
-  const improvedStr = letters.join(' ');
-  return improvedStr;
+  return string.split(' ').map(word => word.split('').join(separator)).join(' ');
 }

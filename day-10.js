@@ -8,4 +8,19 @@ function alienLanguage(str) {
 
 /************************************************************************/
 
-//
+// https://www.codewars.com/kata/57284d23e81185ae6200162a/train/javascript
+
+// Training JS #20: Methods of String object--charAt() charCodeAt() and fromCharCode()
+
+const iDontKnow = "I don't understand task completely and also I have no idea what I need to use in this task. Help me please";
+
+/************************************************************************/
+
+// https://www.codewars.com/kata/5729b103dd8bac11a900119e/train/javascript
+
+// Training JS #21: Methods of String object--trim() and the string template
+
+function fiveLine(s) {
+  s = s.trim();
+  return `${s}\n${s.repeat(2)}\n${s.repeat(3)}\n${s.repeat(4)}\n${s.repeat(5)}`
+}

@@ -25,7 +25,7 @@ const bonusTime = (salary, bonus) => bonus === true ? "£" + (salary * 10) : "£
 // Automorphic Number (Special Numbers Series #6)
 
 function automorphic(n) {
-  return String(n*n).endsWith(String(n)) ? "Automorphic" : "Not!!";
+  return String(n * n).endsWith(String(n)) ? "Automorphic" : "Not!!";
 }
 
 /************************************************************************/

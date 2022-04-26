@@ -3,12 +3,8 @@
 // Training JS #16: Methods of String object--slice(), substring() and substr()
 
 function cutIt(arr) {
-  let result;
-  for (let str of arr) {
-    let minLength = Math.min(...arr.map((str) => str.length));
-    result = arr.map((str) => str.slice(0, minLength));
-  }
-  return result;
+  let minLength = Math.min(...arr.map(str => str.length));
+  return arr.map(str => str.slice(0, minLength));
 }
 
 /************************************************************************/
@@ -24,6 +20,15 @@ function firstToLast(str, c) {
   return str.indexOf(c) === -1
     ? (position = -1)
     : (position = lastSymbol - firstSymbol);
+}
+
+// Shorter option: 
+
+function firstToLast(str, c) {
+  let position;
+  return str.indexOf(c) === -1
+    ? (position = -1)
+    : (position = str.lastIndexOf(c) - str.indexOf(c));
 }
 
 /************************************************************************/

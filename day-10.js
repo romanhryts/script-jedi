@@ -12,7 +12,7 @@ function alienLanguage(str) {
 
 // Training JS #20: Methods of String object--charAt() charCodeAt() and fromCharCode()
 
-const iDontKnow = "I don't understand task completely and also I have no idea what I need to use in this task. Help me please";
+// In progress...
 
 /************************************************************************/
 
@@ -23,4 +23,10 @@ const iDontKnow = "I don't understand task completely and also I have no idea wh
 function fiveLine(s) {
   s = s.trim();
   return `${s}\n${s.repeat(2)}\n${s.repeat(3)}\n${s.repeat(4)}\n${s.repeat(5)}`
+}
+
+// or
+
+function fiveLine(s) {
+  return [1, 2, 3, 4, 5].map(n => s.trim().repeat(n)).join('\n');
 }

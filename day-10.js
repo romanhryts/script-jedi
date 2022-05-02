@@ -12,7 +12,20 @@ function alienLanguage(str) {
 
 // Training JS #20: Methods of String object--charAt() charCodeAt() and fromCharCode()
 
-// In progress...
+function topSecret(str) {
+  let chars = str.split('');
+  for (let i = 0; i < chars.length; i++) {
+    if ((chars[i].charCodeAt() >= 68 && chars[i].charCodeAt() <= 90) || (chars[i].charCodeAt() >= 100 && chars[i].charCodeAt() <= 122)) {
+      chars[i] = String.fromCharCode(chars[i].charCodeAt() - 3);
+    } else if ((chars[i].charCodeAt() >= 65 && chars[i].charCodeAt() <= 68) || (chars[i].charCodeAt() >= 97 && chars[i].charCodeAt() <= 99)) {
+      chars[i] = String.fromCharCode(chars[i].charCodeAt() - 3 + 26);
+    }
+  }
+  return chars.join('');
+}
+answer1="2373";
+answer2="FoGrt";
+answer3="Apple core";
 
 /************************************************************************/
 

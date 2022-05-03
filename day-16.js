@@ -22,7 +22,22 @@ function threeInOne(arr) {
 
 // Training JS #25: methods of arrayObject---reverse() and sort()
 
-// In process..
+function sortIt(arr) {
+  const numbers = arr.slice();
+  
+  const duplicates = numbers.reduce((values, value) => {
+    value in values ? values[value]++ : values[value] = 1;
+    return values;
+  }, {});
+
+  const sortedNumbers = numbers.sort((a, b) => {
+    if (a === b) return 0;
+    if (duplicates[a] === duplicates[b]) return b - a;
+    return duplicates[a] - duplicates[b];
+  });
+
+  return sortedNumbers;
+}
 
 /************************************************************************/
 

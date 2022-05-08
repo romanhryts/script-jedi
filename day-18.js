@@ -38,7 +38,7 @@
 // #31: methods of arrayObject---isArray() indexOf() and toString()
 
 const blackAndWhite = nums => 
-					`It's a ${!Array.isArray(nums) ? 'fake' : nums.includes(5) && nums.includes(13) ? 'black' : 'white'} array`;
+                           `It's a ${!Array.isArray(nums) ? 'fake' : nums.includes(5) && nums.includes(13) ? 'black' : 'white'} array`;
 
 /************************************************************************/
 

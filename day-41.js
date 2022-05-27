@@ -11,3 +11,11 @@ const queueTime = (customers, tillsAmount) => {
     return totalTime;
   }, 0);
 }
+
+/************************************************************************/
+
+// https://www.codewars.com/kata/567ed5db4089538eea000010/train/javascript
+
+// Nuclear Missile Manager
+
+const launchAll = launchMissile => [0, 1, 2, 3, 4].forEach(launcher => setTimeout(() => launchMissile(launcher), launcher * 1000));
